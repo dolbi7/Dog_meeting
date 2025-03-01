@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 import org.junit.jupiter.api.Test;
 
 public class mysqlTest {
-private static final String DRIVER = "com.mysql.jdbc.Driver";
-private static final String URL = "jdbc:mysql://127.0.0.1:3306/dogmeeing"; // jdbc:mysql://127.0.0.1:3306/여러분이 만드신 스키마이름
+private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
+private static final String URL = "jdbc:mysql://127.0.0.1:3306/dogmeeting"; // jdbc:mysql://127.0.0.1:3306/여러분이 만드신 스키마이름
 private static final String USER = "root"; //DB 사용자명
 private static final String PW = "00000000"; //DB 사용자 비밀번호
 @Test
