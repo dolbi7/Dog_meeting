@@ -13,10 +13,10 @@ function Login() {
                 password: password
             });
 
-            if (response.data) {
+            if (response.data.success) {
                 alert('로그인 성공!');
             } else {
-                setError(response.data.message || '로그인 실패');
+                alert(response.data.message);
             }
         } catch (err) {
             setError('서버와 연결이 원활하지 않습니다.');

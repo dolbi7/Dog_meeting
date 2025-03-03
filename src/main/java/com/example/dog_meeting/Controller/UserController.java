@@ -1,6 +1,7 @@
 package com.example.dog_meeting.Controller;
 
 import com.example.dog_meeting.dto.LoginRequest;
+import com.example.dog_meeting.dto.LoginResponse;
 import com.example.dog_meeting.entity.User;
 import com.example.dog_meeting.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +15,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/login")
-    public User login(@RequestBody LoginRequest request) {
+    public LoginResponse login(@RequestBody LoginRequest request) {
         return userService.login(request.getId(), request.getPassword());
     }
 
