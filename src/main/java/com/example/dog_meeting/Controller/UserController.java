@@ -2,7 +2,6 @@ package com.example.dog_meeting.Controller;
 
 import com.example.dog_meeting.dto.LoginRequest;
 import com.example.dog_meeting.dto.LoginResponse;
-import com.example.dog_meeting.entity.User;
 import com.example.dog_meeting.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
