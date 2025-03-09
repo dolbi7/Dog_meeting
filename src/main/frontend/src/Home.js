@@ -13,7 +13,7 @@ function Home() {
     return (
         <div>
             <h2>홈 페이지</h2>
-            백엔드에서 가져온 데이터입니다: {hello}
+            백엔드에서 가져온 데이터입니다!: {hello}
         </div>
     );
 }
